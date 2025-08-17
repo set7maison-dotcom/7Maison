@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>7Maison</title>
+<meta content="Cada refeição deve ser um momento de bem-estar. Ganhe tempo para o que realmente importa: chegar a casa, relaxar e desfrutar." name="description"/>
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Fontes Luxuosas -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Poppins:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
+<style>
+    body { font-family: 'Poppins', sans-serif; color: #222; }
+    h1, h2, h3 { font-family: 'Playfair Display', serif; letter-spacing: 0.5px; }
+    h1 { font-size: 3rem; font-weight: 700; }
+    h2 { font-size: 2.2rem; font-weight: 600; }
+    h3 { font-size: 1.5rem; font-weight: 600; }
+    p, li { font-size: 1.05rem; line-height: 1.8; }
+    .parallax { background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; }
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px);} to {opacity:1; transform: translateY(0);} }
+    .fade-up { animation: fadeInUp 1s ease forwards; opacity: 0; }
+    .zoom-hover img { transition: transform 0.5s ease; }
+    .zoom-hover img:hover { transform: scale(1.05); }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+<!-- Hero com parallax -->
+<section class="relative h-screen flex items-center justify-center text-white parallax" style="background-image: url('images/fundo-prato.jpg'); background-size: cover; background-position: center;">
+<div class="absolute inset-0 bg-black/50"></div>
+<div class="relative z-10 text-center px-6 fade-up" style="animation-delay: 0.3s;">
+<h1>7Maison</h1>
+<p class="text-lg mb-6">Liberte-se da rotina de cozinhar.<br/>Descubra o prazer de chegar a casa e apenas desfrutar.</p>
+<a class="bg-[#cfa86e] text-black px-6 py-3 rounded-full text-lg hover:scale-105 hover:shadow-lg transition transform" href="#reserva">Reservar Agora</a>
+</div>
+</section>
+<!-- Sobre -->
+<section class="py-20 max-w-5xl mx-auto text-center fade-up" id="sobre" style="animation-delay: 0.2s;">
+<h2>Sobre Mim</h2>
+<p class="mt-6">
+      Cada refeição deve ser um momento de bem-estar.<br/>
+      Ganhe tempo para o que REALMENTE importa: chegar a casa, relaxar e desfrutar.
+    </p>
+</section>
+<!-- Serviços -->
+<section class="py-20 bg-gray-50 fade-up" id="servicos" style="animation-delay: 0.3s;">
+<div class="max-w-6xl mx-auto text-center">
+<h2>Serviços</h2>
+<div class="grid md:grid-cols-2 gap-12 mt-12">
+<div>
+<h3>Refeições do Dia-a-Dia</h3>
+<p>Para que a sua rotina seja mais leve e prática.</p>
+</div>
+<div>
+<h3>Cozinha Personalizada</h3>
+<p>Cada prato é adaptado ao seu gosto, preferências e estilo de vida.</p>
+</div>
+</div>
+</div>
+<p class="mt-6 text-[#cfa86e] font-semibold text-lg italic text-center">* Inclui: limpeza, organização, acondicionamento das refeições e um brinde!</p></section>
+<!-- Galeria -->
+<section class="py-20 bg-[#f6f7f9]" id="galeria">
+<div class="max-w-6xl mx-auto px-6">
+<h2 class="text-3xl md:text-4xl font-semibold tracking-wide text-[#121821] text-center">Galeria</h2>
+<!-- Mobile: faixa horizontal com scroll; Desktop: 3 colunas -->
+<div class="mt-10 md:mt-14 md:grid md:grid-cols-3 md:gap-10 flex overflow-x-auto snap-x snap-mandatory gap-6 -mx-6 px-6">
+<!-- Card -->
+<a class="group w-64 md:w-auto flex-shrink-0 md:flex-shrink md:snap-none snap-center text-center mx-auto" href="galeria/refeicoes/">
+<div class="w-40 h-40 md:w-44 md:h-44 rounded-full bg-gray-200/70 shadow-inner mx-auto flex items-center justify-center group-hover:scale-[1.02] transition">
+<span class="text-3xl text-gray-500">+</span>
+</div>
+<div class="mt-5">
+<h3 class="text-xl font-semibold text-[#121821]">Refeições Diárias</h3>
+<p class="mt-2 text-gray-600 leading-relaxed">Para que a sua rotina seja mais leve e prática.</p>
+</div>
+</a>
+<!-- Card -->
+<a class="group w-64 md:w-auto flex-shrink-0 md:flex-shrink md:snap-none snap-center text-center mx-auto" href="galeria/menus/">
+<div class="w-40 h-40 md:w-44 md:h-44 rounded-full bg-gray-200/70 shadow-inner mx-auto flex items-center justify-center group-hover:scale-[1.02] transition">
+<span class="text-3xl text-gray-500">+</span>
+</div>
+<div class="mt-5">
+<h3 class="text-xl font-semibold text-[#121821]">Menus Personalizados</h3>
+<p class="mt-2 text-gray-600 leading-relaxed">Cada prato é adaptado ao seu gosto e estilo de vida.</p>
+</div>
+</a>
+<!-- Card -->
+<a class="group w-64 md:w-auto flex-shrink-0 md:flex-shrink md:snap-none snap-center text-center mx-auto" href="galeria/eventos/">
+<div class="w-40 h-40 md:w-44 md:h-44 rounded-full bg-gray-200/70 shadow-inner mx-auto flex items-center justify-center group-hover:scale-[1.02] transition">
+<span class="text-3xl text-gray-500">+</span>
+</div>
+<div class="mt-5">
+<h3 class="text-xl font-semibold text-[#121821]">Eventos</h3>
+<p class="mt-2 text-gray-600 leading-relaxed">Momentos únicos que merecem pratos especiais.</p>
+</div>
+</a>
+</div>
+</div>
+</section>
+<!-- LIGHTBOX -->
+<div class="fixed inset-0 bg-black/90 hidden items-center justify-center z-50" id="lightbox">
+<button aria-label="Fechar" class="absolute top-4 right-6 text-white text-3xl" onclick="closeLightbox()" type="button">×</button>
+<img class="max-h-[85vh] max-w-[90vw] rounded-lg shadow-lg" id="lightboxImg" src=""/>
+</div>
+<!-- RESERVA (Atualizado) -->
+<!-- ===================== RESERVA (Atualizado) ===================== -->
+<section class="py-20 max-w-4xl mx-auto text-center" id="reserva">
+<h2>Reserve a Sua Experiência</h2>
+<p class="text-gray-500 -mt-2 mb-6">Grande Lisboa • Serviços em casa do cliente</p>
+<form class="grid gap-4 max-w-md mx-auto" data-netlify="true" id="formReserva" method="post" name="reserva">
+<input name="form-name" type="hidden" value="reserva"/>
+<input class="border p-3 rounded" name="nome" placeholder="O seu nome" required="" type="text"/>
+<input class="border p-3 rounded" name="contacto_email" placeholder="O seu contacto / e-mail" required="" type="text"/>
+<input class="border p-3 rounded" name="morada" placeholder="Morada do serviço" required="" type="text"/>
+<!-- Localização (Grande Lisboa) -->
+<select class="border p-3 rounded" name="localizacao" required="">
+<option disabled="" selected="" value="">Escolha… (Grande Lisboa)</option>
+<option>Lisboa</option><option>Sintra</option><option>Cascais</option><option>Oeiras</option>
+<option>Amadora</option><option>Odivelas</option><option>Loures</option><option>Mafra</option>
+<option>Almada</option><option>Seixal</option><option>Barreiro</option><option>Montijo</option>
+</select>
+<!-- Serviço -->
+<label class="text-left">Serviço</label>
+<select class="border p-3 rounded" id="servico" name="servico" required="">
+<option disabled="" selected="" value="">Escolha o serviço…</option>
+<option value="Dia a dia — 50€ (até 10 refeições)">Dia a dia — 50€ (até 10 refeições)</option>
+<option value="Personalizada — 75€ (até 8 refeições)">Personalizada — 75€ (até 8 refeições)</option>
+</select>
+<!-- Data -->
+<label class="text-left mt-2">Data do evento</label>
+<input class="border p-3 rounded" id="dataEvento" name="data" required="" type="date"/>
+<!-- Dias úteis -->
+<div class="text-left hidden" id="weekdayBox">
+<label class="block">Horário (Seg–Sex)</label>
+<select class="border p-3 rounded w-full" id="horaSemana" name="horario_semana">
+<option selected="" value="">Escolha…</option>
+<option value="Manhã • 08h00–12h00">Manhã • 08h00–12h00</option>
+<option value="Tarde • 16h00–20h00">Tarde • 16h00–20h00</option>
+</select>
+<div class="mt-2 hidden" id="comprasSemanaWrap">
+<label class="inline-flex items-center gap-2">
+<input id="comprasSemana" name="extra_compras_semana" type="checkbox" value="Sim"/>
+<span>Extra compras (+15€)</span>
+</label>
+</div>
+</div>
+<!-- Fim de semana -->
+<div class="text-left hidden" id="weekendBox">
+<label class="block">Início (Sáb/Dom – a partir das 10h)</label>
+<input class="border p-3 rounded w-full" id="horaWE" min="10:00" name="inicio_fimsemana" type="time" value="10:00"/>
+<label class="block mt-3">Duração (horas)</label>
+<input class="border p-3 rounded w-full" id="duracaoWE" max="14" min="1" name="duracao_fimsemana" type="number" value="4"/>
+<p class="text-sm text-gray-600 mt-1" id="fimWE"></p>
+<div class="mt-3">
+<label class="inline-flex items-center gap-2">
+<input id="comprasWE" name="extra_compras_fimsemana" type="checkbox" value="Sim"/>
+<span>Extra compras (+15€)</span>
+</label>
+</div>
+</div>
+<label class="text-left mt-2">Descrição do evento</label>
+<textarea class="border p-3 rounded" name="mensagem" placeholder="Nº de pessoas, preferências, notas…" rows="4"></textarea>
+<button class="bg-[#cfa86e] text-black px-6 py-3 rounded-full text-lg hover:scale-105 hover:shadow-lg transition" type="submit">
+      Enviar Pedido
+    </button>
+<a class="bg-[#25D366] text-white px-6 py-3 rounded-full text-lg text-center hover:opacity-90" href="#" id="btnWA" rel="noopener" target="_blank">
+      Enviar por WhatsApp
+    </a>
+<small class="text-gray-500">O WhatsApp abre com os dados do pedido. Confirme antes de enviar.</small>
+</form>
+</section>
+<script>
+  // === UI Helpers ===
+  const inputData = document.getElementById('dataEvento');
+  const weekdayBox = document.getElementById('weekdayBox');
+  const weekendBox = document.getElementById('weekendBox');
+  const horaSemana = document.getElementById('horaSemana');
+  const comprasSemanaWrap = document.getElementById('comprasSemanaWrap');
+  const comprasSemana = document.getElementById('comprasSemana');
+  const comprasWE = document.getElementById('comprasWE');
+  const horaWE = document.getElementById('horaWE');
+  const duracaoWE = document.getElementById('duracaoWE');
+  const fimWE = document.getElementById('fimWE');
+  const btnWA = document.getElementById('btnWA');
+
+  function isWeekend(dateStr){
+    if(!dateStr) return false;
+    const d = new Date(dateStr+'T00:00:00');
+    const day = d.getDay(); // 0 Dom, 6 Sáb
+    return day === 0 || day === 6;
+  }
+  function show(el){ el && (el.classList.remove('hidden')); }
+  function hide(el){ el && (el.classList.add('hidden')); }
+
+  function updateExtraWeekday(){
+    if (horaSemana.value.includes('Tarde')) show(comprasSemanaWrap);
+    else { hide(comprasSemanaWrap); comprasSemana.checked = false; }
+  }
+
+  function validarWE(){
+    if(!horaWE || !duracaoWE || !fimWE) return;
+    const [hh, mm] = (horaWE.value || '10:00').split(':').map(Number);
+    const dur = parseInt(duracaoWE.value || '4', 10);
+    const endMin = hh*60 + mm + dur*60;
+    const limite = 24*60; // 00:00
+    if (endMin > limite){
+      fimWE.textContent = '⚠️ Termina depois das 00:00 — ajuste início ou duração.';
+    } else {
+      const h = String(Math.floor(endMin/60)).padStart(2,'0');
+      const m = String(endMin%60).padStart(2,'0');
+      fimWE.textContent = `Termina às ${h}:${m}.`;
+    }
+  }
+
+  function applyDateUI(){
+    if(!inputData.value){ hide(weekdayBox); hide(weekendBox); return; }
+    if(isWeekend(inputData.value)){
+      hide(weekdayBox);
+      show(weekendBox);
+      horaWE.value = '10:00';
+      duracaoWE.value = 4;
+      validarWE();
+    } else {
+      hide(weekendBox);
+      show(weekdayBox);
+      horaSemana.value = '';
+      hide(comprasSemanaWrap);
+      comprasSemana.checked = false;
+    }
+  }
+
+  inputData.addEventListener('change', applyDateUI);
+  horaSemana.addEventListener('change', updateExtraWeekday);
+  horaWE.addEventListener('input', validarWE);
+  duracaoWE.addEventListener('input', validarWE);
+
+  // Min date = hoje
+  (function(){
+    const t = new Date(); t.setHours(0,0,0,0);
+    const yyyy = t.getFullYear();
+    const mm = String(t.getMonth()+1).padStart(2,'0');
+    const dd = String(t.getDate()).padStart(2,'0');
+    inputData.min = `${yyyy}-${mm}-${dd}`;
+  })();
+
+  // === WhatsApp compose ===
+  btnWA.addEventListener('click', (e) => {
+    e.preventDefault();
+    const f = document.getElementById('formReserva');
+    const nome = f.nome.value || '';
+    const contacto = f.contacto_email.value || '';
+    const morada = f.morada.value || '';
+    const loc = f.localizacao.value || '';
+    const servico = f.servico.value || '';
+    const data = f.data.value || '';
+
+    let horario = '';
+    let extras = [];
+    if(isWeekend(data)){
+      horario = `Início ${horaWE.value} • ${duracaoWE.value}h`;
+      if(comprasWE.checked) extras.push('Extra compras +15€');
+    } else {
+      horario = f.horario_semana.value || '';
+      if(comprasSemana.checked) extras.push('Extra compras +15€');
+    }
+
+    const linhas = [
+      'Pedido de Reserva 7Maison',
+      `Nome: ${nome}`,
+      `Contacto/e-mail: ${contacto}`,
+      `Morada: ${morada}`,
+      `Localização: ${loc}`,
+      `Serviço: ${servico}`,
+      `Data: ${data}`,
+      `Horário: ${horario}`,
+      extras.length ? `Extras: ${extras.join(', ')}` : null,
+      f.mensagem.value ? `Notas: ${f.mensagem.value}` : null
+    ].filter(Boolean);
+
+    const url = `https://wa.me/351000000000?text=${encodeURIComponent(linhas.join('\n'))}`;
+    window.open(url, '_blank');
+  });
+</script>
+<!-- Rodapé -->
+<footer class="bg-black text-white py-6 text-center">
+<p>© 2025 7Maison | Lisboa</p>
+</footer>
+<!-- Botão WhatsApp -->
+<a class="fixed bottom-6 right-6 bg-green-500 text-white px-4 py-3 rounded-full shadow-lg hover:bg-green-600 transition" href="https://wa.me/351XXXXXXXXX">WhatsApp</a>
+<script>
+(function () {
+  const inputData   = document.getElementById('dataEvento');
+  const weekdayBox  = document.getElementById('weekdayBox');
+  const weekendBox  = document.getElementById('weekendBox');
+  const horaSemana  = document.getElementById('horaSemana');
+  const extraBox    = document.getElementById('extraBox');
+  const extraChk    = document.getElementById('extraCompras');
+  const extraHint   = document.getElementById('extraHint');
+  const weInicio    = document.getElementById('horaInicioWE');
+  const weDuracao   = document.getElementById('duracaoWE');
+  const fimWE       = document.getElementById('fimWE');
+  const btnWA       = document.getElementById('btnWA');
+
+  function isWeekend(dateStr){
+    const d = new Date(dateStr + 'T00:00:00');
+    const day = d.getDay(); // 0=Dom, 6=Sáb
+    return day === 0 || day === 6;
+  }
+  function show(el){ if(el) el.style.display='block'; }
+  function hide(el){ if(el) el.style.display='none'; }
+
+  function minutos(hhmm){ const [h,m]=(hhmm||'00:00').split(':').map(Number); return h*60+(m||0); }
+  function hhmm(min){ const h=String(Math.floor(min/60)).padStart(2,'0'); const m=String(min%60).padStart(2,'0'); return `${h}:${m}`; }
+
+  function validarWE(){
+    if(!weInicio || !weDuracao || !fimWE) return;
+    const ini = weInicio.value || '10:00';
+    const dur = parseInt(weDuracao.value || '4', 10);
+    const end = minutos(ini) + dur*60;
+    if (end > 24*60) {
+      fimWE.textContent = '⚠️ Ultrapassa as 00:00. Ajuste início ou horas.';
+    } else {
+      fimWE.textContent = `Termina às ${hhmm(end)}.`;
+    }
+  }
+
+  function updateExtraVisibility(){
+    if (!inputData.value) { hide(extraBox); return; }
+    if (isWeekend(inputData.value)) {
+      show(extraBox);
+      extraHint.textContent = 'Disponível ao fim‑de‑semana.';
+    } else {
+      // dias úteis: só se Tarde 16–20
+      if (horaSemana.value === '16:00-20:00') {
+        show(extraBox);
+        extraHint.textContent = 'Disponível no horário da tarde (16h–20h).';
+      } else {
+        hide(extraBox);
+        if (extraChk) extraChk.checked = false;
+      }
+    }
+  }
+
+  function applyDateUI(){
+    if (!inputData.value) { hide(weekdayBox); hide(weekendBox); hide(extraBox); return; }
+    if (isWeekend(inputData.value)) {
+      hide(weekdayBox);
+      show(weekendBox);
+      if (weInicio && (!weInicio.value || weInicio.value < '10:00')) weInicio.value = '10:00';
+      if (weDuracao && !weDuracao.value) weDuracao.value = 4;
+      validarWE();
+      show(extraBox); // extra sempre ao fim de semana
+      extraHint.textContent = 'Disponível ao fim‑de‑semana.';
+    } else {
+      show(weekdayBox);
+      hide(weekendBox);
+      horaSemana.value = '';
+      hide(extraBox);
+      if (extraChk) extraChk.checked = false;
+    }
+  }
+
+  // Listeners
+  if (inputData) inputData.addEventListener('change', () => { applyDateUI(); updateExtraVisibility(); });
+  if (horaSemana) horaSemana.addEventListener('change', updateExtraVisibility);
+  if (weInicio) weInicio.addEventListener('input', validarWE);
+  if (weDuracao) weDuracao.addEventListener('input', validarWE);
+
+  // Initialize if date prefilled
+  applyDateUI();
+  updateExtraVisibility();
+
+  // WhatsApp
+  if (btnWA) btnWA.addEventListener('click', (e) => {
+    e.preventDefault();
+    const f = document.getElementById('formReserva');
+    const nome = f.nome.value || '';
+    const email= f.email.value || '';
+    const tel  = f.telefone.value || '';
+    const mor  = f.morada.value || '';
+    const loc  = f.localidade.value || '';
+    const data = inputData.value || '';
+    let horario = '';
+    if (isWeekend(data)) {
+      horario = `Início ${weInicio.value} • ${weDuracao.value}h`;
+    } else {
+      horario = horaSemana.value || '';
+    }
+    const compras = (extraChk && extraChk.checked) ? 'Sim (+15€)' : 'Não';
+    const texto = [
+      'Reserva 7Maison',
+      `Nome: ${nome}`,
+      `E-mail: ${email}`,
+      `Telefone: ${tel}`,
+      `Morada: ${mor}`,
+      `Localidade: ${loc}`,
+      `Data: ${data}`,
+      `Horário: ${horario}`,
+      `Extra compras: ${compras}`,
+      f.mensagem.value ? `Notas: ${f.mensagem.value}` : null
+    ].filter(Boolean).join('%0A');
+    const url = `https://wa.me/?text=${encodeURIComponent(texto)}`;
+    window.open(url, '_blank');
+  });
+})();
+</script>
+</body>
+</html>
